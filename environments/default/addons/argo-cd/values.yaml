@@ -65,6 +65,17 @@ configs:
       url: public.ecr.aws
       enableOCI: 'true'
   cm:
+    dex.config: |
+      connectors:
+        - type: github
+          id: github
+          name: GitHub
+          config:
+           clientID: XXX
+           clientSecret: XXX
+           orgs:
+            - name: Lagrange-Labs
+            
     application.resourceTrackingMethod: 'annotation' #use annotation for tracking required for Crossplane
     resource.exclusions: |
       - kinds:
