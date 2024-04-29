@@ -71,8 +71,8 @@ configs:
           id: github
           name: GitHub
           config:
-           clientID: XXX
-           clientSecret: XXX
+           clientID: {{metadata.annotations.github_client_id}}
+           clientSecret: {{metadata.annotations.github_client_secret}}
            orgs:
             - name: Lagrange-Labs
             
