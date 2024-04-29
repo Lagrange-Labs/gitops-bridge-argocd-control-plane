@@ -71,8 +71,8 @@ configs:
           id: github
           name: GitHub
           config:
-           clientID: $ARGOCD_GITHUB_CLIENT_ID
-           clientSecret: $ARGOCD_GITHUB_CLIENT_SECRET
+           clientID: 45d320c48a2e8ce5499d
+           clientSecret: $ARGOCD_GITHUB_CLIENT_SECRET:dex.github.clientSecret
            orgs:
             - name: Lagrange-Labs
             
