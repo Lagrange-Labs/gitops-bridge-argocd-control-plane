@@ -72,7 +72,9 @@ configs:
           name: GitHub
           config:
            clientID: 45d320c48a2e8ce5499d
-           clientSecret: $github-secret:dex.github.clientSecret
+           clientSecret: $github-secret:clientSecret
+           redirectURL: https://argocd-dev.distributed-query.io/api/dex/callback
+           url: https://argocd-dev.distributed-query.io
            orgs:
             - name: Lagrange-Labs
             
