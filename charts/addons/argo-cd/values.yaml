@@ -77,6 +77,10 @@ configs:
            url: https://argocd-dev.distributed-query.io
            orgs:
             - name: Lagrange-Labs
+  rbac:
+    policy.default: "role:admin"
+    policy.csv: |
+       g, org:member, role:admin
             
     application.resourceTrackingMethod: 'annotation' #use annotation for tracking required for Crossplane
     resource.exclusions: |
