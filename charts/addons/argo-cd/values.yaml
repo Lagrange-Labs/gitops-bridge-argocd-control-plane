@@ -74,18 +74,6 @@ configs:
   dex:
     enabled: true
   cm:
-    dex.config: |
-      connectors:
-        - type: github
-          id: github
-          name: GitHub
-          config:
-           clientID: 45d320c48a2e8ce5499d
-           clientSecret: $github:clientSecret
-           redirectURL: https://argocd-dev.distributed-query.io/api/dex/callback
-           url: https://argocd-dev.distributed-query.io
-           orgs:
-            - name: Lagrange-Labs
   rbac:
     policy.default: "role:admin"
     policy.csv: |
